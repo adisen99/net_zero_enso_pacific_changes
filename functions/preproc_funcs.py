@@ -24,6 +24,7 @@ def detrend1d_check(arr, period):
     return arr_det
 
 def detrend_separate_check(da, dim, period):
+    # da = da.copy()
     return xr.apply_ufunc(detrend1d_check, da, input_core_dims=[[dim]], output_core_dims=[[dim]], kwargs=dict(period=period), vectorize=True, dask='parallelized')
 
 
