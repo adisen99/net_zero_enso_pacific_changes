@@ -18,6 +18,7 @@ def detrend1d_check(arr, period):
     #     return arr_det
     # else:
     #     return arr
+    arr = arr.copy() # to counter buffer is read-only error
     res = STL(arr, period = period).fit()
     arr_det = arr - res.trend
     # arr_det = detrend(arr, order=2)
