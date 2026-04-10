@@ -2,7 +2,7 @@
 Pacific mean state modulation by southern ocean project
 
 
-This repository provides code required to replicate the results in "Persistence of an El Nino-like mean state and elevated ENSO amplitude post net-zero" Nature Climate Change, by Aditya Sengupta et al.
+This repository provides code required to replicate the results in "Persistence of an El Nino-like mean state and elevated ENSO amplitude post net-zero" Communications Earth and Environment, by Aditya Sengupta et al.
 
 The repository contains `functions/` and `util/` folders containing utility functions required for processing the data and making the plots. The repository also contains 16 juptyer notebook files: 
 - files with prefix `00` contain data used for processing model netcdf files available on the ACCESS-NRI Gadi supercomputer; 
